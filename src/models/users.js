@@ -7,8 +7,11 @@ const users = [
 
 module.exports = {
   getAllUsers: () => users,
+
   getUserById: (id) => users.find(user => user.id === id),
+
   getByEmail: (email) => users.find(user => user.email === email),
+
   registerUser: (name, email, password) => {
     const userAlreadyRegistered = users.find(user => user.email === email)
 
@@ -25,6 +28,7 @@ module.exports = {
     users.push(newUser);
     return newUser;
   },
+
   createUser: (name, email, password, role) => {
     const userAlreadyRegistered = users.find(user => user.email === email)
 
@@ -41,6 +45,7 @@ module.exports = {
     users.push(newUser);
     return newUser;
   },
+  
   deleteUser: (id) => {
     const userIndex = users.findIndex(user => user.id === +id)
     if(userIndex === -1) return null
