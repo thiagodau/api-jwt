@@ -1,0 +1,18 @@
+{
+  "name": "api-rotas-protegidas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [],
+  "author": "thiagodau",
+  "license": "ISC",
+  "description": "Exercicio do curso Full Stack Developer da One Bit Code",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
