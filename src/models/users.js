@@ -47,7 +47,7 @@ module.exports = {
   },
   
   deleteUser: (id) => {
-    const userIndex = users.findIndex(user => user.id === +id)
+    const userIndex = users.findIndex(user => user.id === id)
     if(userIndex === -1) return null
     const [deletedUser] = users.splice(userIndex, 1);
     return deletedUser;
